@@ -1,0 +1,91 @@
+html{
+    background-color: rgb(205, 223, 247);
+    font-family: sans-serif;
+    text-align: center;
+    min-width: 30em;
+}
+
+#navbar{
+   background-color: rgb(255, 255, 255);
+   margin: 0em;
+}
+
+ul {
+    list-style-type: none;    
+    padding: 0em;
+    margin: 0em;
+}
+
+#navbar ul {
+    padding: 1em;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0em;
+}
+
+#navbar li a {
+    text-decoration: none;
+    margin: 0em;
+    padding: 1em 4em; 
+}
+
+#navbar a:hover:not(.currentPage) {
+    background-color: lightslategray;
+    color: white;
+}
+
+.currentPage {
+    background-color: blanchedalmond;
+}
+
+.comments li {
+    background-color: rgb(144, 178, 219);
+    list-style: none;
+    padding: 0.1em;
+    margin: 1em;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+#main {
+    margin-top: 4em;
+}
+
+#input {
+    background-color: aliceblue;
+    height: 8em;
+    margin-left: 30em;
+    margin-right: 30em;
+    margin-bottom: 2em;
+}
+
+#msgField {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-height: 6em;
+    max-width: 40em;
+}
+
+pre {
+    font-family: sans-serif;
+    margin-bottom: 0;
+    word-wrap: break-word;
+}
+
+.date {
+    font-size: 0.8em;
+    font-style: italic; 
+}
+
+.delete {
+    margin-left: 3em;
+}
+
+.replyMsg li{
+    background-color: rgb(205, 223, 247);
+    margin: 1em;
+    margin-left: 3em;
+    outline: solid white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Message Board</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="functions.js"></script>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div>
+            <h1>Awesome Message Board</h1>
+        </div>
+        <div id="navbar">
+            <header>
+                <ul>
+                    <li><a class= "currentPage" href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </header>
+        </div>
+        <div id="main">
+            <form id="input" onsubmit="addComment(this.text.value); return false;">
+                <label>Write comment here:
+                    <br />
+                    <textarea id="msgField" name="text" type="text" value=""></textarea>
+                </label>
+                <br />
+                <input id="submitButton" type="submit" value="Post"/>
+                <button id="clearField" type="reset" onclick="clearMsgField();">Clear</button>
+            </form> 
+        </div>
+        <br/>
+        <div id="controls">
+            <button id="sample" class="buttons" onclick="addSampleMessages();">Sample Messages</button>
+            <button id="clear" class="buttons" onclick="clearMessages();">Clear</button>
+        </div>
+        <div>
+            <header>
+                <p>Comments</p>
+            </header>
+        </div>
+        <div class="comments">
+            <ul>
+
+            </ul>
+        </div>
+    </body>
+</html>
